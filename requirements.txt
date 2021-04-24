@@ -1,0 +1,4 @@
+##### use latest version
+pillow
+prettytable
+geopy
