@@ -135,7 +135,7 @@ def save_with_meta(file, filename):
     image_editable = ImageDraw.Draw(image)
     image_editable.text((y_start, x_start), text, (237, 230, 211), font=font)
 
-    image.save(os.path.join(target_dir, filename))
+    image.save(os.path.join(target_dir, filename), exif=image.info['exif'])
 
 
 def main():
